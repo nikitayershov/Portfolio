@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mykyta Yershov</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header start-->
+    <header class="header" id="home">
+        <div class="wrapper">
+            <div class="header__burger-container">
+                <div class="header__burger burger hamburger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
+            </div>
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#about" class="header__link">About Me</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#portfolio" class="header__link">Portfolio</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contacts" class="header__link">Contacts</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#home" class="header__link">Home</a>
+                    </li>
+                </ul>
+
+                <div class="header__nav-close">
+                    <span class="header__nav-close-line "></span>
+                    <span class="header__nav-close-line"></span>
+                </div>
+            </nav>
+            <div class="header__intro">
+                <h1 class="header__name">Nikita Yershov,<br>Front-end developer</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Header start-->
+
+    <!-- About start-->
+    <section id="about">
+        <div class="about__images">
+            <img src="img/photo.jpg" alt="my photo" class="about__image-photo">
+            <img src="img/image.jpg" alt="keyboard" class="about__image-background">
+        </div>
+        <div class="about__text">
+            <h2 class="about__text-title">About me</h2>
+            <p class="about__text-desc">Hy I'm Mykyta Yershov. I'm learning web development and going to build a career as a full-stack developer.<br> I'm open to new knowledge. I like to study new technologies and apply them in practice.<br><b>Skills:</b> HTML, CSS, JS, Python</p>
+        </div>
+    </section>
+    <!-- About end-->
+
+    <!-- Portfolio start-->
+    <section id="portfolio">
+        <div class="portfolio__caption">
+            <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio__projects">
+            <div class="portfolio__project">
+
+                <img src="img/project1.png" alt="project1"  class="portfolio__project-pic">
+                <div class="portfolio__project-desc">
+                    <h3 class="portfolio__project-title">Flashcards</h3>
+
+                    <button  class="open-window " id="myBtn">About project</button>
+
+                </div>
+            </div>
+            <div class="portfolio__project">
+                <img src="img/project2.png" alt="project2"  class="portfolio__project-pic">
+                <div class="portfolio__project-desc">
+                    <h3 class="portfolio__project-title">Virtual Piano</h3>
+
+                    <button  class="open-window " id="myBtnVP">About project</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio end-->
+
+
+    <!-- Pop-up start-->
+    <div class="modal window" id="myPopup">
+        <div class="modal__header">
+            <div class="modal__header-title">
+                Flashcards
+            </div>
+            <button data-close-button class="modal__header-close-button close">
+                &times;
+            </button>
+        </div>
+        <div class="modal-body">You can see the project at the following link <a href="https://nikitayershov.github.io/Flashcards/">flashcards</a><br>I did this project when i was studying the frontend o HyperSkill. I created a web page with flip-down flash cards. Learned some HTML basis and learned that CSS can easily make a beautiful design</div>
+    </div>
+    <div id="overlay1" class="overlay"></div>
+
+    <div class="modal" id="modal-vp">
+        <div class="modal__header">
+            <div class="modal__header-title">
+                Virtual Piano
+            </div>
+            <button data-close-button class="modal__header-close-button closeVP">
+                &times;
+            </button>
+        </div>
+        <div class="modal-body">You can see the project at the following link <a href="https://nikitayershov.github.io/Flashcards/">flashcards</a><br>I did this project when i was studying the frontend o HyperSkill. I created a web page with Virtual Piano. Learned some HTML basis, learned that CSS can easily make a beautiful design and learned that JS can extend functionality of website.</div>
+    </div>
+    <!-- Pop-up end-->
+
+
+    <!-- Contacts start-->
+    <section id="contacts">
+        <div class="contacts__caption">
+            <h2>Contacts</h2>
+        </div>
+        <div class="contacts__info">
+            <h3>You can contact me at <a href="mailto:nikita.yershov@gmail.com">nikita.yershov@gmail.com</a></h3>
+            <h3>or phone number – <a href="tel:+380506553330">+380506553330</a></h3>
+        </div>
+        <div class="contacts__social-networks">
+            <div class="contacts__social-network">
+                <img src="img/svg/github.svg" alt="git" class="contacts__social-network-ico">
+                <a href="https://github.com/nikitayershov" class="contacts__social-network-link"></a>
+            </div>
+        <div class="contacts__social-network">
+                <img src="img/svg/facebook.svg" alt="FB" class="contacts__social-network-ico">
+                <a href="https://www.facebook.com/profile.php?id=100004223042180" class="contacts__social-network-link"></a>
+            </div>
+        <div class="contacts__social-network">
+                <img src="img/svg/instagram%201.svg" alt="inst" class="contacts__social-network-ico">
+                <a href="https://www.instagram.com/nikitayershov" class="contacts__social-network-link"></a>
+            </div>
+        </div>
+    </section>
+    <!-- Contacts end-->
+
+    <!-- Footer start-->
+    <footer>
+        <div class="footer_info">
+            <h3 class="footer__name">NIKITA YERSHOV</h3>
+            <h3 class="footer__year">2022</h3>
+        </div>
+    </footer>
+    <!-- Footer end-->
+    <script src="test.js"></script>
+</body>
+</html>
